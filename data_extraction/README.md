@@ -30,4 +30,4 @@ It is organized as follows:
 
 ## 📁 Folder `data_extraction/docs/`
 
-This folder contains documentation regarding the extracted data parameters. For a detailed description of the parameters, see [EXTRACTED_DATA_PARAMETERS.md](data_extraction/docs/EXTRACTED_DATA_PARAMETERS.md).
+This folder contains documentation regarding the extracted data parameters. For a detailed description of the parameters, see [EXTRACTED_DATA_PARAMETERS.md](./docs/EXTRACTED_DATA_PARAMETERS.md).

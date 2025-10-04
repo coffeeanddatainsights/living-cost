@@ -1,0 +1,19 @@
+# utils.py - librerie comuni per tutti i notebook
+import sys
+import os
+import pandas as pd
+
+repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+if repo_root not in sys.path:
+    sys.path.append(repo_root)
+
+# common notebooks functions
+def read_world_dataset():
+    path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data_extraction' , 'raw_data', 'world', 'cost-of-living.csv')
+    df = pd.read_csv(path)
+    return df
+
+def read_world_mappedDataset():
+    path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data_extraction' , 'raw_data', 'world', 'cost-of-living-mapped.csv')
+    df = pd.read_csv(path)
+    return df
