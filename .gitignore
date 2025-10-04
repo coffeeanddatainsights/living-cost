@@ -1,5 +1,9 @@
 # Ignore temporary raw data folder
-./data_extraction/raw_data/tmp/
+data_extraction/raw_data/tmp/*
 
 # Ignore python venv
 ./.venv/
+
+# Environment files
+.env
+.env.*
