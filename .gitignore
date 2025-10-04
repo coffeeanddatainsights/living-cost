@@ -1,2 +1,5 @@
 # Ignore temporary raw data folder
-real-estate/data_extraction/raw_data/tmp/
+./data_extraction/raw_data/tmp/
+
+# Ignore python venv
+./.venv/
