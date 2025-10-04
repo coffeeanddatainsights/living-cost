@@ -57,3 +57,25 @@
               
 ! All steps are fully reproducible with Python scripts, SQL queries and Power-BI. !
 
+(4) EXTRACT DATA :
+    ! data are stored on € or $. On the table there's cost (numeric field, intended on monthly cost) and currency (€or $) !
+    1. LIVING COST - Paramethers
+        - Food
+            - Mean monthly food cost
+        - Utilities
+            - energy
+            - water
+            - gas
+            - internet
+        - Transport 
+            - Public transport 
+            - Fuel cost
+        - Free time 
+            - Restaurant
+            - Cinema 
+            - Gym 
+            - Other recreational activities
+        - Other costs
+            - Wealth / Insurance
+            - Healthcare
+        
