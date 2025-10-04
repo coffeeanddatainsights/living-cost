@@ -1,0 +1,59 @@
+(1) OBJECTIVES : 
+    - Identify the best places in the world to live, combining:
+        - Housing costs (€/m² for buying and renting)
+        - Cost of living (average monthly expenses: food, utilities, transport, leisure)
+    - Focus on Italy: analyze which cities/regions offer the best balance between real estate costs and cost of living.
+    - For Italy only: study real estate trends over time, both for:
+        - Renting market (€/m² per month)
+        - Buying market (€/m²)
+
+! create visualizations and dashboards to communicate findings effectively. ! 
+
+
+(2) GENERAL PIPELINE : 
+    i   - Identify datasets and load that on table's database
+    ii  - Extract data 
+    iii - Clean data
+    iv - Transform data
+    v  - Load data 
+    vi - Data Visualization
+
+(3) COMPLETE PIPELINE : 
+    3.1 -  Identify datasets and load that on table's database
+        a. Identify different sources and different datasets to link all of that to one unique dataset -> raw dataset. 
+        b. Create MySQL database where all of data are loaded.
+        c. Based on raw dataset, create all of different tables, with all of right data types, and its relationships.
+        d. Load data from raw dataset to created tables on (c) point.
+    
+    3.2 - Extract data
+        a. Prepare python environment with all of requirements.
+        b. Extract data from database with python scripts and sql queries.
+
+    3.3 - Clean data
+        a. Clean data from white spaces, duplicates, etc...
+    
+    3.4 - Transform data
+        a. With python scripts add calculated columns for KPIs / Affordability Index that helps for the final objectives.
+        b. Calculate initialized data that are useful for the KPIs
+    
+    3.5 - Load data
+        a. Export data in a csv file
+        b. Load data from csv file to power bi.
+    
+    3.6 - Data Visualization
+        a. Worksheet 1 - World 
+            - Card 1 : Mean cost of all of houses
+            - Card 2 : €/m² for buying
+            - Card 3 : €/m² for renting
+            - Card 4 : Mean of total cost of living
+            - Map 
+            
+        b. Worksheet 2 - Italy 
+            - Card 1 : Mean cost of all of houses
+            - Card 2 : €/m² for buying
+            - Card 3 : €/m² for renting
+            - Card 4 : Mean of total cost of living
+            - Map 
+              
+! All steps are fully reproducible with Python scripts, SQL queries and Power-BI. !
+
