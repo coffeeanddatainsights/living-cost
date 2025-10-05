@@ -17,3 +17,8 @@ def read_world_mappedDataset():
     path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data_extraction' , 'raw_data', 'world', 'cost-of-living-mapped.csv')
     df = pd.read_csv(path)
     return df
+
+def read_world_colCleanDataset():
+    path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data_extraction' , 'raw_data', 'world', 'cost-of-living-columns-clean.csv')
+    df = pd.read_csv(path)
+    return df
