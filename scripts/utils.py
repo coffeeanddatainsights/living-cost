@@ -22,3 +22,7 @@ def read_world_colCleanDataset():
     path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data_extraction' , 'raw_data', 'world', 'cost-of-living-columns-clean.csv')
     df = pd.read_csv(path)
     return df
+
+def read_generic_csv(path, separator=''):
+    df = pd.read_csv(path, sep=separator)
+    return df
