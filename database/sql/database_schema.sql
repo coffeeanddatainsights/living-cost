@@ -44,7 +44,7 @@ CREATE TABLE IF NOT EXISTS valcar (
     idnval INT PRIMARY KEY AUTO_INCREMENT COMMENT 'PK',
     idncity INT NOT NULL COMMENT 'City reference',
     idcara INT NOT NULL COMMENT 'Caracteristic reference',
-    cvalue VARCHAR(255) COMMENT 'caracteristic value for the city',
+    cvalue DECIMAL(12,2) COMMENT 'Caracteristic value for the city(USD)',
     CONSTRAINT fk_city
         FOREIGN KEY (idncity) REFERENCES regcit(idncity)
         ON DELETE CASCADE
