@@ -7,10 +7,10 @@ from sqlalchemy import text
 def get_db_engine(env_path=''):
     if env_path == '':
         env_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), '.env')
-        print(f"🔍 Loading .env from: {env_path}")
+        print(f"🔍 Loading .env")
 
     if not os.path.exists(env_path):
-        raise FileNotFoundError(f"❌ .env file not found at {env_path}")
+        raise FileNotFoundError(f"❌ .env file not found")
 
     load_dotenv(env_path)
 
