@@ -1,5 +1,7 @@
-# Ignore temporary raw data folder
-data_extraction/raw_data/tmp/*
+# Ignore temporary tmp files
+todo.txt
+notes.txt
+datasetLinks.txt
 
 # Ignore python venv
 ./.venv/
@@ -7,3 +9,11 @@ data_extraction/raw_data/tmp/*
 # Environment files
 .env
 .env.*
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# notebooks cache 
+.ipynb_checkpoints/

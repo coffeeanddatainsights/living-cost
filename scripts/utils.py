@@ -10,17 +10,17 @@ if repo_root not in sys.path:
 
 # common notebooks functions
 def read_world_dataset():
-    path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data_extraction' , 'raw_data', 'world', 'cost-of-living.csv')
+    path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data' , 'raw', 'cost-of-living.csv')
     df = pd.read_csv(path)
     return df
 
 def read_world_mappedDataset():
-    path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data_extraction' , 'raw_data', 'world', 'cost-of-living-mapped.csv')
+    path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data' , 'processed', 'cost-of-living-mapped.csv')
     df = pd.read_csv(path)
     return df
 
 def read_world_colCleanDataset():
-    path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data_extraction' , 'raw_data', 'world', 'cost-of-living-columns-clean.csv')
+    path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data' , 'processed', 'cost-of-living-columns-clean.csv')
     df = pd.read_csv(path)
     return df
 
