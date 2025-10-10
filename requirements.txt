@@ -3,3 +3,4 @@ jupyter
 python-dotenv   # env variables for notebooks
 SQLAlchemy
 PyMySQL
+numpy

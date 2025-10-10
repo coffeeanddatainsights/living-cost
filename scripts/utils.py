@@ -2,6 +2,7 @@
 import sys
 import os
 import pandas as pd
+import numpy as np
 
 repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 if repo_root not in sys.path:
