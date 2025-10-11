@@ -37,7 +37,19 @@ The dataset is now **clean**, **relationally consistent**, and **ready for analy
 The following chart represents the **distribution of cleaned records by category** (number of data points per category).  
 It provides a first overview of how balanced the dataset is after the cleaning process.
 
-![Category Distribution Histogram](docs/images/DistributionByCategory.png)
+![Category Distribution Histogram](docs/img/DistributionByCategory.png)
+
+
+
+## 📊 Number of records for each paramether by City/Country (Bottom 10)
+After cleaning and validating the dataset through SQL views, a coverage analysis was performed to understand how many parameters (characteristics) are available for each city.
+
+The following chart shows the 10 cities with the fewest recorded characteristics, indicating where data coverage is limited:
+
+This insight helps to identify cities with missing or incomplete data, which can later be excluded or handled carefully during transformation and visualization steps.
+
+![Bottom 10 City_Country](docs/img/FewestParamethers.png)
+
 
 ---
 

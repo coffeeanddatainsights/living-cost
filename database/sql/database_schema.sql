@@ -31,7 +31,13 @@ CREATE TABLE IF NOT EXISTS regcat (
     descat VARCHAR(100) NOT NULL COMMENT 'Description of the category (e.g., Food, Transport)'
 ) COMMENT='Master table for characteristic categories';
 
--- c. caracteristics_registry table
+-- c. categories weights
+CREATE TABLE IF NOT EXISTS weicat (
+    idncat INT PRIMARY KEY AUTO_INCREMENT COMMENT 'Unique ID for each category',
+    weight DECIMAL(8,2) NOT NULL COMMENT 'Weights for each the category for the analysis'
+) COMMENT='Weights Analysis for each category';
+
+-- d. caracteristics_registry table
 CREATE TABLE IF NOT EXISTS regcar (
     idcara INT PRIMARY KEY AUTO_INCREMENT COMMENT 'Unique identifier for each characteristic',
     descar VARCHAR(255) NOT NULL COMMENT 'Description of the characteristic',
@@ -39,7 +45,7 @@ CREATE TABLE IF NOT EXISTS regcar (
     CONSTRAINT fk_catego FOREIGN KEY (idncat) REFERENCES regcat(idncat)
 ) COMMENT='Registry of characteristics for cities (columns of dataset)';
 
--- c.  city values tables
+-- e.  city values tables
 CREATE TABLE IF NOT EXISTS valcar (
     idnval INT PRIMARY KEY AUTO_INCREMENT COMMENT 'PK',
     idncity INT NOT NULL COMMENT 'City reference',

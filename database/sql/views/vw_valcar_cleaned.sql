@@ -1,4 +1,7 @@
--- 1. Cleaned view containing cleaned data of vw_valcar(valcar). CLEANED DATA
+-- =========================================
+-- vw_valcar_cleaned.sql
+-- Cleaned view from valcar
+-- =========================================
 -- Remove duplicates
 -- Remove white spaces and right format of varchar fields
 -- Remove NULL or NEGATIVE cvalue
