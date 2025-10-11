@@ -9,6 +9,7 @@ SELECT
     v.Country,
     v.Category,
     v.MeanPrice,
+    v.Paramethers,
     
     -- Normalized Price based on Category
     CASE 
