@@ -1,4 +1,4 @@
-## Transform & KPI Calculation
+## 📊 Transform & KPI Calculation
 
 In this phase, we created derived views and calculated KPIs to compare the cost of living across cities and categories. All transformations use the cleaned view `vw_valcar_cleaned` as the source of truth.
 

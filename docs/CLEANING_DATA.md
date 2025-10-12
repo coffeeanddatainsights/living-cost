@@ -32,12 +32,12 @@ The dataset is now **clean**, **relationally consistent**, and **ready for analy
 
 ---
 
-## 📊 Distribution by Category
+## 📊 Distribution by Category (Records for each category after data cleaning)
 
 The following chart represents the **distribution of cleaned records by category** (number of data points per category).  
 It provides a first overview of how balanced the dataset is after the cleaning process.
 
-![Category Distribution Histogram](docs/img/DistributionByCategory.png)
+![Distribution of cleaned data](./img/DistributionByCategory.png)
 
 
 
@@ -46,14 +46,13 @@ After cleaning and validating the dataset through SQL views, a coverage analysis
 
 The following chart shows the 10 cities with the fewest recorded characteristics, indicating where data coverage is limited:
 
+![Fewest Caracteristhics](./img/FewestParamethers.png)
+
 This insight helps to identify cities with missing or incomplete data, which can later be excluded or handled carefully during transformation and visualization steps.
 
-![Bottom 10 City_Country](docs/img/FewestParamethers.png)
+
 
 
 ---
 
-## 💡 Next Steps
-1. Further exploration of cleaned data (`09_explore_cleaned_data.ipynb`)  
-2. Data transformation and KPI computation (Step 3 of pipeline)  
-3. Integration with Power BI for advanced analysis and dashboarding  
+Step 3 - Data Transformation: [`docs\TRANSFORM_DATA.md`](./TRANSFORM_DATA.md).
